@@ -31,7 +31,44 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**I. Vision-First Development**
+- [ ] Detection logic planned before automation sequences
+- [ ] Image templates identified and capture plan documented
+- [ ] Accuracy thresholds defined (≥90% success rate target)
+- [ ] Dry-run testing mode included in implementation plan
+
+**II. Fail-Safe Automation**
+- [ ] Timeout guards specified for all detection calls
+- [ ] State verification checkpoints documented (before/after critical actions)
+- [ ] Fallback strategies defined for failure scenarios
+- [ ] Emergency stop mechanism included
+- [ ] Resource depletion detection planned
+
+**III. Template-Based Detection**
+- [ ] Template organization follows `/assets/templates/{context}/` structure
+- [ ] Naming convention follows `{context}_{element}_{variant}.png` pattern
+- [ ] Multiple UI state variants identified
+- [ ] ROI coordinates planned for performance optimization
+- [ ] Confidence thresholds documented per template type
+
+**IV. Human-Like Behavior**
+- [ ] Click randomization within element bounds specified
+- [ ] Timing jitter parameters defined (±10-30% delays)
+- [ ] Mouse movement patterns described (Bezier/human-like paths)
+- [ ] Rate limiting between actions configured
+
+**V. Observability & Debugging**
+- [ ] Structured logging format defined (timestamp, action, coordinates, confidence)
+- [ ] Screenshot capture on failure planned
+- [ ] Debug overlay mode specified for visualization
+- [ ] Execution metrics tracked (success rate, duration, failures)
+- [ ] Replay capability from logs considered
+
+**Safety & Compliance**
+- [ ] No credential storage in code or plain config
+- [ ] Rate limiting to avoid anti-bot detection
+- [ ] Foreground-only automation enforced
+- [ ] User consent mechanism for account-modifying actions
 
 ## Project Structure
 

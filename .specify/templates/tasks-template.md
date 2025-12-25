@@ -10,6 +10,12 @@ description: "Task list template for feature implementation"
 
 **Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
 
+**Vision-First Workflow**: For automation features, tasks should follow the constitution's vision-first principle:
+1. Vision/Detection tasks (template creation, accuracy testing)
+2. Dry-run automation tasks (action planning without execution)
+3. Integration tasks (supervised real-game testing)
+4. Observability tasks (logging, metrics, debugging tools)
+
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
 ## Format: `[ID] [P?] [Story] Description`
